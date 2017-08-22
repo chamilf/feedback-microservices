@@ -1,0 +1,133 @@
+.fontpicker {
+    background-color: #FFFFFC;
+    border: 1px solid #CECECE;
+    color: #444444;
+    font-family: Arial,sans-serif;
+	font-size: 12px;
+    margin: 0;
+    padding: 4px;
+    text-align: left;
+	position:absolute;
+	top:10px;
+	left:10px;
+	height:135px;
+	width:320px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-moz-box-shadow: 3px 2px 2px #C3C3C3;
+	border-radius: 10px 10px 10px 10px; 
+    box-shadow: 3px 2px 2px #C3C3C3; 
+}
+#fontbox {
+    background-color: #FFFFEE;
+    color: #444444;
+    cursor: pointer;
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+    margin: 0;
+    text-align: center;
+    width: 165px;
+	z-index:1;
+	position:relative;
+}
+
+#fonts {
+    border: 1px solid #CECECE;
+    z-index: 4;
+}
+
+#sizes {
+    background-color: #FFFFEE;
+    border: 1px solid #CECECE;
+    color: #444444;
+    cursor: pointer;
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+    margin: 0;
+    text-align: left;
+    width: 165px;
+	z-index: 3;
+	position:absolute;
+	top: 20px;
+	left: 0px;
+}
+#sizebox_heading {
+	position: absolute;
+	bottom: 62px;
+}
+
+#sizebox {   
+	background-color: #FFFFEE;
+    cursor: pointer;
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+    margin: 0;
+    text-align: left;
+    width: 165px;
+	margin-top: 0px;
+	position: absolute;
+	bottom: 42px;
+	z-index:0;
+}
+.singlesize {
+	font-family: Arial,Arial,Helvetica,sans-serif; 
+	background-color: rgb(255, 255, 238);
+}
+#fontpicker_btns {
+	position: absolute;
+	bottom:12px;
+	right:8px;
+	font-size: 10px;
+    z-index: -1;
+}
+#fontpicker_cbs {
+	position: absolute;
+	top:30px;
+	right:60px;
+}
+.singlefont {
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
+#font_text {
+	width:163px;
+}
+#font_size {
+	width:163px;
+}
+.editfontbtn {
+    position: absolute;
+    padding: 0;
+    top: 25px;
+    right: 7px;
+    min-height: 20px;
+    min-width: 40px;
+    z-index: 2;
+}
+.deletefontbtn {
+    position: absolute;
+    padding: 0;
+    top: 50px;
+    right: 7px;
+    min-height: 20px;
+    min-width: 40px;
+    z-index: 2;
+}
+
+.fontbtn_cls {
+	position: absolute; 
+	top: 29px; 
+	left: 179px; 
+	height:19px;
+	width:20px !important;
+	padding-bottom: 7px;
+	z-index: 2;
+}
+.sizebtn_cls {
+	position:absolute; 
+	bottom: 42px; 
+	left: 179px; 
+	height: 19px;
+	width: 20px !important;
+	padding-bottom: 7px;
+	z-index: 2;
+}

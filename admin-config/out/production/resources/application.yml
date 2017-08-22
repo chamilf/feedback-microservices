@@ -1,0 +1,46 @@
+server:
+  port: 9101
+  contextPath: /mycoolservice
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/qmatic_cloud?currentSchema=cloud_mycoolservice
+    username: qp_cloud
+    password: qp_cloud
+  session:
+    store-type: jdbc
+  jpa:
+    hibernate:
+      ddl-auto: update
+      
+  thymeleaf:
+    cache: false
+    mode: LEGACYHTML5
+
+#security:
+  #headers:
+    #frame: false
+  #sessions: stateless
+  #user:
+  #  password: none
+  #oauth2:
+    #loadBalanced: true
+    #client:
+      #accessTokenUri: http://citestelb-917157714.eu-west-1.elb.amazonaws.com/auth/oauth/token
+      #userAuthorizationUri: http://citestelb-917157714.eu-west-1.elb.amazonaws.com/auth/oauth/authorize
+      #clientId: web-app
+      #preEstablishedRedirectUri: http://localhost:9101/mycoolservice/login
+      #registeredRedirectUri: http://localhost:9101/mycoolservice/login
+      #useCurrentUri: false
+      #accessTokenUri: http://localhost:9001/auth/oauth/token
+      #userAuthorizationUri: http://localhost:9001/auth/oauth/authorize
+      #clientId: web-app
+      #preEstablishedRedirectUri: http://localhost:9003/login
+      #registeredRedirectUri: http://localhost:9003/login
+      #useCurrentUri: false 
+    #resource:
+      #jwt:
+        #keyValue: |
+          #-----BEGIN PUBLIC KEY-----
+          #MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAimUKhvBhsoeSM3HkIOP/Y3RXjvonBlZnLj8oO92TyAKG53lmAoK0wZ5MTZPsfrOz2Z7CeAp6mPhUANX2RUoFwVzG7rJmgWyqGmGFNBmtYL+uVqQ80TzWi5zyzXTxgVMWiCqqw/u4AeE1qhN8chnGwhUBnpgPAPd8v57mIwg0n5JxjdYe7pgHlpvt8ZXTXd1KBxB5K7WjNlCfMf75ZEeBaplxsSfJUwKbnHQKWcY3NnpjkVR8y4jviAbkOHmGMaliM7fcsLzbosBUPDQuNlvYdjPBRfH6MMPeXRW6On3u0Um9wIYmkQS+AEgHCq4UuLOnTTqqxnGkwFYeMAAXmRyMtQIDAQAB
+          #-----END PUBLIC KEY-----

@@ -1,0 +1,38 @@
+/*
+    This file is used to override default styling.
+*/
+
+/* Links */
+/*.navigation-menu a.menu-item {
+    color: #666;
+}*/
+/*.navigation-menu a.menu-item:hover, .navigation-menu a.menu-item:active {
+    color: #AA0435;
+}*/
+/*
+.navigation-menu a.selected {
+    color: #AA0435;
+}*/
+
+/* Header background */
+/*.navbar-inner {
+    background: #A9023A;
+}*/
+
+/* Header bottom line */
+/*.header {
+    border-bottom:3px #AA0435 solid;
+}*/
+
+/* Toolbar background and bottom line */
+/*.content-toolbar {
+    background: #A9023A;
+    border-bottom: 3px #AA0435 solid;
+}*/
+
+/* Footer background */
+/*.footer {
+    background: #A9023A;
+}*/
+
+

@@ -1,0 +1,9 @@
+.component {
+	overflow: hidden;
+}
+
+table {
+    border-spacing: 2px;
+}
+
+a {outline : 0;}

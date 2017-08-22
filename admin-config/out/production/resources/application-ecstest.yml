@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://qcloudpostgres.ccqafqtyp6jk.eu-west-1.rds.amazonaws.com:5432/test?currentSchema=cloud_mycoolservice
+    username: mattias
+    password: mattias123
+    
+security:
+  headers:
+    frame: false
+  sessions: stateless
+  user:
+    password: none
+  oauth2:
+    loadBalanced: true
+    client:
+      accessTokenUri: http://citestelb-917157714.eu-west-1.elb.amazonaws.com/auth/oauth/token
+      userAuthorizationUri: http://citestelb-917157714.eu-west-1.elb.amazonaws.com/auth/oauth/authorize
+      clientId: web-app
+      preEstablishedRedirectUri: http://citestelb-917157714.eu-west-1.elb.amazonaws.com/mycoolservice/login
+      registeredRedirectUri: http://citestelb-917157714.eu-west-1.elb.amazonaws.com/mycoolservice/login
+      useCurrentUri: false
+    resource:
+      jwt:
+        keyValue: |
+          -----BEGIN PUBLIC KEY-----
+          MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAimUKhvBhsoeSM3HkIOP/Y3RXjvonBlZnLj8oO92TyAKG53lmAoK0wZ5MTZPsfrOz2Z7CeAp6mPhUANX2RUoFwVzG7rJmgWyqGmGFNBmtYL+uVqQ80TzWi5zyzXTxgVMWiCqqw/u4AeE1qhN8chnGwhUBnpgPAPd8v57mIwg0n5JxjdYe7pgHlpvt8ZXTXd1KBxB5K7WjNlCfMf75ZEeBaplxsSfJUwKbnHQKWcY3NnpjkVR8y4jviAbkOHmGMaliM7fcsLzbosBUPDQuNlvYdjPBRfH6MMPeXRW6On3u0Um9wIYmkQS+AEgHCq4UuLOnTTqqxnGkwFYeMAAXmRyMtQIDAQAB
+          -----END PUBLIC KEY-----

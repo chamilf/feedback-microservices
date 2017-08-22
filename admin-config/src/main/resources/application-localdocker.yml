@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${JDBC_HOST}:5432/qmatic_cloud_auth
+    username: qp_cloud
+    password: qp_cloud
